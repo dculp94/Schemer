@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "13240318374",
+    "firebase_url": "https://schemer-41d37.firebaseio.com",
+    "project_id": "schemer-41d37",
+    "storage_bucket": "schemer-41d37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13240318374:android:e39a09bab83cb635",
+        "android_client_info": {
+          "package_name": "com.example.schemer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13240318374-i495cr0t2q20ktnaifr6vhldb39l5rtj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhGVc1wD4L_oulgY0mYEtu-HRIXLOgxkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13240318374-i495cr0t2q20ktnaifr6vhldb39l5rtj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
