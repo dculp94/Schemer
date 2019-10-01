@@ -25,12 +25,13 @@
             android:layout_height="wrap_content"
             android:text="Email"
             android:id="@+id/profileEmail"/>
+
         <TextView
             android:padding="10dp"
             android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email"
+            android:text="Uid"
             android:id="@+id/profileUid"/>
         <Button
             android:id="@+id/button_logout"

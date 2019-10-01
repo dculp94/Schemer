@@ -22,10 +22,10 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        Email = (TextView)findViewById(R.id.profileEmail);
+        Email = findViewById(R.id.profileEmail);
         Uid = (TextView)findViewById(R.id.profileUid);
         mAuth = FirebaseAuth.getInstance();
-        logout = (Button)findViewById(R.id.button_logout);
+        logout = findViewById(R.id.button_logout);
         user = mAuth.getCurrentUser();
 
 

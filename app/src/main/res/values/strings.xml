@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Schemer</string>
+    <string name="Strength">Selecting this card allows the user to pursue further interests into Strength weekly routines.</string>
+    <string name="Cardio">Selecting this card allows the user to pursue further interests into Cardiovascular weekly routines.</string>
+    <string name="Mobility">Selecting this card allows the user to pursue further interests into Mobility weekly routines</string>
+
 </resources>
