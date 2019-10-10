@@ -1,46 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Interface">
+    android:orientation="vertical"
+    tools:context=".User_Home_Page">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/Strength"
         android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_height="145dp"
         app:cardCornerRadius="8dp">
 
         <LinearLayout
-            android:background="@drawable/bg1"
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/bg1"
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="24dp"
+                        android:text="Strength"
                         android:textColor="#ffffff"
-                        android:text="Strength" />
+                        android:textSize="24dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -62,11 +63,11 @@
 
 
             <ImageView
-            android:layout_alignParentRight="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src='@drawable/barbell'
-                android:background="@null">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src='@drawable/barbell'>
 
             </ImageView>
 
@@ -77,36 +78,38 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/Cardio"
         android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_height="145dp"
         app:cardCornerRadius="8dp">
 
         <LinearLayout
-            android:background="@drawable/bg2"
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/bg2"
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="24dp"
+                        android:text="Cardiovascular"
                         android:textColor="#ffffff"
-                        android:text="Cardiovascular" />
+                        android:textSize="24dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -142,36 +145,38 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/Mobility"
         android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_height="145dp"
         app:cardCornerRadius="8dp">
 
         <LinearLayout
-            android:background="@drawable/bg3"
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/bg3"
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="24dp"
+                        android:text="Mobility"
                         android:textColor="#ffffff"
-                        android:text="Mobility" />
+                        android:textSize="24dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -193,16 +198,24 @@
 
 
             <ImageView
-                android:layout_alignParentRight="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src='@drawable/yoga'
-                android:background="@null">
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src='@drawable/yoga'>
 
             </ImageView>
 
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/Planner"
+        android:layout_width="227dp"
+        android:layout_height="103dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:text="Go to Weekly Calendar" />
 
 </LinearLayout>

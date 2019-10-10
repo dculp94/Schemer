@@ -4,41 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Strength_info">
 
     <androidx.cardview.widget.CardView
 
         android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_height="145dp"
         app:cardCornerRadius="8dp">
 
         <LinearLayout
+            android:layout_width="328dp"
+            android:layout_height="127dp"
             android:background="@drawable/bg1"
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="match_parent">
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="24dp"
+                        android:text="Strength"
                         android:textColor="#ffffff"
-                        android:text="Strength" />
+                        android:textSize="24dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -54,22 +57,203 @@
         </LinearLayout>
 
 
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Upper_strength"
+        android:layout_width="300sp"
+        android:layout_height="146dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upper Body"
+                        android:textColor="#ffffff"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="125sp"
+                        android:layout_height="76dp"
+                        android:text="Various types of upper body strength exercises"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
 
             <ImageView
+                android:layout_width="61dp"
+                android:layout_height="68dp"
                 android:layout_alignParentRight="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src='@drawable/barbell'
-                android:background="@null">
+                android:background="@null"
+                android:src='@drawable/upper'>
 
             </ImageView>
 
 
         </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Lower_strength"
+        android:layout_width="300sp"
+        android:layout_height="146dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lower Body"
+                        android:textColor="#ffffff"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="125sp"
+                        android:layout_height="76dp"
+                        android:text="Various types of lower body strength exercises"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="61dp"
+                android:layout_height="68dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src='@drawable/squat'>
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Back_strength"
+        android:layout_width="300sp"
+        android:layout_height="146dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back Strength"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="76dp"
+                        android:text="Various types of back strength exercises"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="61dp"
+                android:layout_height="68dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src='@drawable/back'>
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
     </androidx.cardview.widget.CardView>
 
 

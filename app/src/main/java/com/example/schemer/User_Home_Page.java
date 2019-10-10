@@ -3,14 +3,18 @@ package com.example.schemer;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-public class Interface extends AppCompatActivity implements View.OnClickListener{
+import java.util.Calendar;
+
+public class User_Home_Page extends AppCompatActivity implements View.OnClickListener{
     private CardView Strength;
     private CardView Cardio;
     private CardView Mobility;
+    private Button Planner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -22,11 +26,13 @@ public class Interface extends AppCompatActivity implements View.OnClickListener
         Strength = findViewById(R.id.Strength);
         Cardio = findViewById(R.id.Cardio);
         Mobility = findViewById(R.id.Mobility);
+        Planner = findViewById(R.id.Planner);
 
         // Add click listener to each
         Strength.setOnClickListener(this);
         Cardio.setOnClickListener(this);
         Mobility.setOnClickListener(this);
+        Planner.setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +47,9 @@ public class Interface extends AppCompatActivity implements View.OnClickListener
                 i = new Intent(this, Cardio_info.class);startActivity(i); break;
             case R.id.Mobility:
                 i = new Intent(this, Mobility_info.class);startActivity(i); break;
+            case R.id.Planner:
+                i = new Intent(this, RoutinePlanner.class);startActivity(i); break;
+
             default:break;
         }
     }

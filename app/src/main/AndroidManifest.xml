@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Mobility_info"></activity>
+        <activity android:name=".RoutinePlanner"></activity>
+        <activity android:name=".Mobility_info" />
         <activity android:name=".Cardio_info" />
         <activity android:name=".Strength_info" />
         <activity android:name=".MainActivity">
@@ -21,9 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".Interface" />
+        <activity android:name=".User_Home_Page" />
     </application>
 
 </manifest>
