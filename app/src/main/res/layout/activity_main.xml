@@ -12,20 +12,18 @@
         android:layout_width="412dp"
         android:layout_height="110dp"
         android:layout_gravity="center"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="62dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginBottom="568dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginBottom="492dp"
         android:padding="20dp"
         android:text="Welcome to Schemer!"
         android:textColor="#000"
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -39,7 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/barbell" />
+        android:src="@drawable/barbell" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -54,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.679"
-        app:srcCompat="@drawable/cardio" />
+        android:src="@drawable/cardio" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -70,6 +68,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/yoga" />
+        android:src="@drawable/yoga" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
