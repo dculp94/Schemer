@@ -45,7 +45,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Strength"
+                        android:text="This category allows for the pursuit of further strength based exercises"
                         android:textSize="14dp"
 
                         />

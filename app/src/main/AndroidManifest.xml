@@ -11,7 +11,61 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RoutinePlanner"></activity>
+        <activity
+            android:name=".Lower_Body_Strength.LowerBackStrengthListActivity"
+            android:label="@string/title_lowerbackstrength_list"
+            android:parentActivityName=".Strength_info"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.schemer.Strength_info" />
+        </activity>
+        <activity
+            android:name=".Lower_Body_Strength.LowerBackStrengthDetailActivity"
+            android:label="@string/title_lowerbackstrength_detail"
+            android:parentActivityName=".Lower_Body_Strength.LowerBackStrengthListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.schemer.Lower_Body_Strength.LowerBackStrengthListActivity" />
+        </activity>
+        <activity
+            android:name=".BackStrength.BackStrengthListActivity"
+            android:label="@string/title_backstrength_list"
+            android:parentActivityName=".Strength_info"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.schemer.Strength_info" />
+        </activity>
+        <activity
+            android:name=".BackStrength.BackStrengthDetailActivity"
+            android:label="@string/title_backstrength_detail"
+            android:parentActivityName=".BackStrength.BackStrengthListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.schemer.BackStrength.BackStrengthListActivity" />
+        </activity>
+        <activity
+            android:name=".Upper_Body_Strength.UpperBodyStrengthListActivity"
+            android:label="@string/title_upperbodystrength_list"
+            android:parentActivityName=".Strength_info"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.schemer.Strength_info" />
+        </activity>
+        <activity
+            android:name=".Upper_Body_Strength.UpperBodyStrengthDetailActivity"
+            android:label="@string/title_upperbodystrength_detail"
+            android:parentActivityName=".Upper_Body_Strength.UpperBodyStrengthListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.schemer.Upper_Body_Strength.UpperBodyStrengthListActivity" />
+        </activity>
+        <activity android:name=".RoutinePlanner" />
         <activity android:name=".Mobility_info" />
         <activity android:name=".Cardio_info" />
         <activity android:name=".Strength_info" />

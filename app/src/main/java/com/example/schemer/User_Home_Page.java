@@ -23,6 +23,7 @@ public class User_Home_Page extends AppCompatActivity implements View.OnClickLis
 
         // Define card id
         setContentView(R.layout.user_home_page);
+
         Strength = findViewById(R.id.Strength);
         Cardio = findViewById(R.id.Cardio);
         Mobility = findViewById(R.id.Mobility);
