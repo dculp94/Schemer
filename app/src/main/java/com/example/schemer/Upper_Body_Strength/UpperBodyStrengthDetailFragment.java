@@ -8,12 +8,23 @@ import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.webkit.WebView;
+import android.widget.Button;
+import android.widget.RelativeLayout;
+import com.google.android.youtube.player.YouTubeBaseActivity;
+
+
 
 import com.example.schemer.Upper_Body_Strength.dummy.DummyContent;
+import com.google.android.youtube.player.YouTubeInitializationResult;
+import com.google.android.youtube.player.YouTubePlayer;
+import com.google.android.youtube.player.YouTubePlayerView;
+
+import static android.content.ContentValues.TAG;
 
 /**
  * A fragment representing a single Upper_Body_Strength detail screen.
@@ -21,11 +32,18 @@ import com.example.schemer.Upper_Body_Strength.dummy.DummyContent;
  * in two-pane mode (on tablets) or a {@link UpperBodyStrengthDetailActivity}
  * on handsets.
  */
+
+
 public class UpperBodyStrengthDetailFragment extends Fragment {
     /**
      * The fragment argument representing the item ID that this fragment
      * represents.
      */
+
+    YouTubePlayerView mYoutubePlayerView;
+
+    YouTubePlayer.OnInitializedListener mOnInitializedListener;
+
     public static final String ARG_ITEM_ID = "item_id";
 
     /**
@@ -58,14 +76,26 @@ public class UpperBodyStrengthDetailFragment extends Fragment {
         }
     }
 
+    // Subfield for each individual item display
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.upperbodystrength_detail, container, false);
 
-        // Show the dummy content as text in a TextView.
+
         if (mItem != null) {
-            ((TextView) rootView.findViewById(R.id.upperbodystrength_detail)).setText(mItem.details);
+            mYoutubePlayerView = mYoutubePlayerView.findViewById(R.id.YoutubeVideo);
+            mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
+                @Override
+                public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
+                    youTubePlayer.loadVideo("XSza8hVTlmM");
+                }
+
+                @Override
+                public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
+                    Log.d(TAG,"Failed to initialize");
+                }
+            };
         }
 
         return rootView;

@@ -26,10 +26,11 @@ public class DummyContent {
     private static final int COUNT = 25;
 
     static {
-        // Add some sample items.
-        for (int i = 1; i <= COUNT; i++) {
-            addItem(createDummyItem(i));
-        }
+        // Add Upper Body
+
+        addItem(new DummyItem("1","Chest", "Exercises: "));
+        addItem(new DummyItem("2","Arms", "Exercises: "));
+        addItem(new DummyItem("3","Abdominal", "Exercises: "));
     }
 
     private static void addItem(DummyItem item) {
@@ -56,12 +57,12 @@ public class DummyContent {
     public static class DummyItem {
         public final String id;
         public final String content;
-        public final String details;
+        public final String video;
 
-        public DummyItem(String id, String content, String details) {
+        public DummyItem(String id, String content, String video) {
             this.id = id;
             this.content = content;
-            this.details = details;
+            this.video = video;
         }
 
         @Override

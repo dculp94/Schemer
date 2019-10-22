@@ -11,6 +11,8 @@ import com.example.schemer.BackStrength.BackStrengthListActivity;
 import com.example.schemer.Lower_Body_Strength.LowerBackStrengthDetailActivity;
 import com.example.schemer.Lower_Body_Strength.LowerBackStrengthListActivity;
 import com.example.schemer.Upper_Body_Strength.UpperBodyStrengthListActivity;
+import com.google.android.youtube.player.YouTubeBaseActivity;
+
 
 public class Strength_info extends AppCompatActivity implements View.OnClickListener{
 
