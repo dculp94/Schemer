@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".LowerBodyExercises"
+            android:label="@string/title_activity_lower_body_exercises"
+            android:parentActivityName=".Strength_info"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.schemer.Strength_info" />
+        </activity>
+        <activity
+            android:name=".UpperBodyExercises"
+            android:label="@string/title_activity_upper_body_exercises"
+            android:parentActivityName=".Strength_info"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.schemer.Strength_info" />
+        </activity>
+        <activity
             android:name=".Lower_Body_Strength.LowerBackStrengthListActivity"
             android:label="@string/title_lowerbackstrength_list"
             android:parentActivityName=".Strength_info"

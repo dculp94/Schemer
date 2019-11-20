@@ -105,5 +105,8 @@
     <string name="title_backstrength_detail">Back Strength Detail</string>
     <string name="title_lowerbackstrength_list">Lower Back Strength Exercises</string>
     <string name="title_lowerbackstrength_detail">Lower Back Strength Detail</string>
+    <string name="title_activity_upper_body_exercises">Upper Body Exercises</string>
+    <string name="title_activity_lower_body_exercises">Lower Body Exercises</string>
+    <string name="title_activity_back_exercises">Back Exercises</string>
 
 </resources>
