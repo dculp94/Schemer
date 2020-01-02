@@ -14,7 +14,7 @@ public class Strength_info extends AppCompatActivity implements View.OnClickList
 
     private CardView Upper_Body;
     private CardView Lower_Body;
-    private CardView Back_Body;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +28,8 @@ public class Strength_info extends AppCompatActivity implements View.OnClickList
         Lower_Body.setOnClickListener(this);
 
     }
+
+    // Sets listeners for the cards
     @Override
     public void onClick(View v) {
 
