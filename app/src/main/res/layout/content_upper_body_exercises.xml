@@ -53,7 +53,7 @@
                         <TextView
                             android:layout_width="125sp"
                             android:layout_height="76dp"
-                            android:text="Information on Chest Press Exercise"
+                            android:text="Information on Chest Press"
                             android:textSize="14dp" />
 
 
@@ -118,7 +118,7 @@
                         <TextView
                             android:layout_width="125sp"
                             android:layout_height="76dp"
-                            android:text="Information on the  Shoulder Press Exercise"
+                            android:text="Information on the  Shoulder Press"
                             android:textSize="14dp" />
 
 
@@ -185,7 +185,7 @@
                         <TextView
                             android:layout_width="125sp"
                             android:layout_height="76dp"
-                            android:text="Information on Bicep Curl Exercise"
+                            android:text="Information on Bicep Curl"
                             android:textSize="14dp" />
 
 
@@ -250,7 +250,7 @@
                         <TextView
                             android:layout_width="125sp"
                             android:layout_height="76dp"
-                            android:text="Information on Tricep Curl Exercise"
+                            android:text="Information on Tricep Curl"
                             android:textSize="14dp" />
 
 
@@ -315,7 +315,7 @@
                         <TextView
                             android:layout_width="125sp"
                             android:layout_height="76dp"
-                            android:text="Information on Horizontal Pull otherwise known as the 'Row' Exercise"
+                            android:text="Information on Horizontal Pull"
                             android:textSize="14dp" />
 
 

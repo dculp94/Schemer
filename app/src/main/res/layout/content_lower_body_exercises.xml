@@ -119,7 +119,7 @@
                         <TextView
                             android:layout_width="125sp"
                             android:layout_height="76dp"
-                            android:text="Information on Hack Squat Exercise"
+                            android:text="Information on Hack Squat"
                             android:textSize="14dp" />
 
 
@@ -184,7 +184,7 @@
                         <TextView
                             android:layout_width="125sp"
                             android:layout_height="76dp"
-                            android:text="Information on Deadlift Exercise"
+                            android:text="Information on Deadlift"
                             android:textSize="14dp" />
 
 
