@@ -12,8 +12,8 @@ import android.view.View;
 
 public class Strength_info extends AppCompatActivity implements View.OnClickListener{
 
-    private CardView Upper_Body;
-    private CardView Lower_Body;
+    private CardView Upper_Body,Lower_Body;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +24,11 @@ public class Strength_info extends AppCompatActivity implements View.OnClickList
         Lower_Body = findViewById(R.id.Lower_strength);
 
 
+
         Upper_Body.setOnClickListener(this);
         Lower_Body.setOnClickListener(this);
+
+
 
     }
 
@@ -40,6 +43,7 @@ public class Strength_info extends AppCompatActivity implements View.OnClickList
                 i = new Intent(this, UpperBodyExercises.class);startActivity(i); break;
             case R.id.Lower_strength:
                 i = new Intent(this, LowerBodyExercises.class);startActivity(i); break;
+
 
 
             default:break;

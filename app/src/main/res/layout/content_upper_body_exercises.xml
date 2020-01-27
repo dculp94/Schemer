@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Chest Press -->
         <androidx.cardview.widget.CardView
             android:id="@+id/Chest_Press"
             android:layout_width="300sp"
@@ -80,6 +81,7 @@
 
         </androidx.cardview.widget.CardView>
 
+        <!-- Shoulder Press -->
         <androidx.cardview.widget.CardView
             android:id="@+id/Shoulder_Press"
             android:layout_width="300sp"
@@ -146,7 +148,7 @@
         </androidx.cardview.widget.CardView>
 
 
-
+        <!-- Biceps -->
         <androidx.cardview.widget.CardView
             android:id="@+id/Bicep"
             android:layout_width="300sp"
@@ -212,6 +214,7 @@
 
         </androidx.cardview.widget.CardView>
 
+        <!-- Triceps -->
         <androidx.cardview.widget.CardView
             android:id="@+id/Triceps"
             android:layout_width="300sp"
@@ -277,8 +280,9 @@
 
         </androidx.cardview.widget.CardView>
 
+        <!-- Horizontal Pull-->
         <androidx.cardview.widget.CardView
-            android:id="@+id/Rows"
+            android:id="@+id/Horizontal_Pull"
             android:layout_width="300sp"
             android:layout_height="146dp"
             android:layout_marginLeft="40dp"

@@ -108,5 +108,20 @@
     <string name="title_activity_upper_body_exercises">Upper Body Exercises</string>
     <string name="title_activity_lower_body_exercises">Lower Body Exercises</string>
     <string name="title_activity_back_exercises">Back Exercises</string>
+    <string name="title_cardioexercises_list">Cardio Exercises</string>
+    <string name="title_cardioexercises_detail">Cardio_Exercise Detail</string>
+    <string name="title_activity_chest_press_info">Chest Press</string>
+    <string name="title_activity_shoulder__press_info">Shoulder Press</string>
+    <string name="title_activity_bicep__info">Biceps</string>
+    <string name="title_activity_tricep__info">Triceps</string>
+    <string name="title_activity_horizontal__pull__info">Horizontal Pull</string>
+    <string name="title_activity_squat__info">Squat Exercise</string>
+    <string name="title_activity_deadlift__info">Deadlift Exercise</string>
+    <string name="title_activity_hack__squat__info">Hack Squat Exercise</string>
+    <string name="title_activity_leg__press__info">Leg Press Exercise</string>
+    <string name="title_activity_yoga">Yoga Routine</string>
+    <string name="title_activity_static__hold__info">Static Hold Routine</string>
+    <string name="title_activity_ankle__info">Ankle Stretch Routine</string>
+    <string name="title_activity_spinal__stretch__info">Spinal Stretch Routine</string>
 
 </resources>

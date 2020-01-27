@@ -1,89 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".LowerBodyExercises"
-    tools:showIn="@layout/activity_lower_body_exercises"
+    tools:context=".Mobility_info"
+    tools:showIn="@layout/activity_mobility_info"
     android:orientation="vertical">
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
-    <!-- Squat -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/Squat"
-        android:layout_width="300sp"
-        android:layout_height="146dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="30dp"
-        app:cardCornerRadius="8dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/bg3"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="30dp"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Squat"
-                        android:textColor="#ffffff"
-                        android:textSize="24dp" />
-
-                    <TextView
-                        android:layout_width="125sp"
-                        android:layout_height="76dp"
-                        android:text="Information on Squat Exercise"
-                        android:textSize="14dp" />
-
-
-                </LinearLayout>
-
-            </LinearLayout>
-        </LinearLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-
-            <ImageView
-                android:layout_width="61dp"
-                android:layout_height="68dp"
-                android:layout_alignParentRight="true"
-                android:background="@null"
-                android:src='@drawable/squat'>
-
-            </ImageView>
-
-
-        </RelativeLayout>
-
-
-
-    </androidx.cardview.widget.CardView>
-
-    <!-- Hack Squat -->
-    <androidx.cardview.widget.CardView
-            android:id="@+id/Hack_squat"
+        <!--  Yoga_Info Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/YogaField"
             android:layout_width="300sp"
             android:layout_height="146dp"
             android:layout_marginLeft="40dp"
@@ -94,7 +27,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/bg3"
+                android:background="@drawable/bg4"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -113,14 +46,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Hack Squat"
+                            android:text="Yoga"
                             android:textColor="#ffffff"
                             android:textSize="24dp" />
 
                         <TextView
                             android:layout_width="125sp"
                             android:layout_height="76dp"
-                            android:text="Information on Hack Squat"
+                            android:text="Introduction to basic Yoga poses"
                             android:textSize="14dp" />
 
 
@@ -134,11 +67,11 @@
 
 
                 <ImageView
-                    android:layout_width="61dp"
+                    android:layout_width="41dp"
                     android:layout_height="68dp"
                     android:layout_alignParentRight="true"
                     android:background="@null"
-                    android:src='@drawable/squat'>
+                    android:src='@drawable/cardio'>
 
                 </ImageView>
 
@@ -147,9 +80,9 @@
 
         </androidx.cardview.widget.CardView>
 
-    <!-- Deadlift -->
-    <androidx.cardview.widget.CardView
-            android:id="@+id/Deadlift"
+        <!--  Static Hold Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/StaticHoldField"
             android:layout_width="300sp"
             android:layout_height="146dp"
             android:layout_marginLeft="40dp"
@@ -160,7 +93,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/bg3"
+                android:background="@drawable/bg5"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -179,14 +112,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Deadlift"
+                            android:text="Static Holds"
                             android:textColor="#ffffff"
                             android:textSize="24dp" />
 
                         <TextView
                             android:layout_width="125sp"
                             android:layout_height="76dp"
-                            android:text="Information on Deadlift"
+                            android:text="Introduction to static hold routines"
                             android:textSize="14dp" />
 
 
@@ -200,11 +133,11 @@
 
 
                 <ImageView
-                    android:layout_width="61dp"
+                    android:layout_width="41dp"
                     android:layout_height="68dp"
                     android:layout_alignParentRight="true"
                     android:background="@null"
-                    android:src='@drawable/barbell'>
+                    android:src='@drawable/cardio'>
 
                 </ImageView>
 
@@ -213,9 +146,9 @@
 
         </androidx.cardview.widget.CardView>
 
-    <!-- Leg Press -->
-    <androidx.cardview.widget.CardView
-            android:id="@+id/Leg_Press"
+        <!-- Ankle Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/AnkleField"
             android:layout_width="300sp"
             android:layout_height="146dp"
             android:layout_marginLeft="40dp"
@@ -226,7 +159,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/bg3"
+                android:background="@drawable/bg5"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -245,14 +178,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Leg Press"
+                            android:text="Ankle Mobility"
                             android:textColor="#ffffff"
                             android:textSize="24dp" />
 
                         <TextView
                             android:layout_width="125sp"
                             android:layout_height="76dp"
-                            android:text="Information on Leg Press Exercise"
+                            android:text="Introduction to ankle mobility routine"
                             android:textSize="14dp" />
 
 
@@ -266,11 +199,11 @@
 
 
                 <ImageView
-                    android:layout_width="61dp"
+                    android:layout_width="41dp"
                     android:layout_height="68dp"
                     android:layout_alignParentRight="true"
                     android:background="@null"
-                    android:src='@drawable/barbell'>
+                    android:src='@drawable/cardio'>
 
                 </ImageView>
 
@@ -279,6 +212,71 @@
 
         </androidx.cardview.widget.CardView>
 
+        <!--  Spinal Stretch Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/SpinalStretchField"
+            android:layout_width="300sp"
+            android:layout_height="146dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jump Rope"
+                            android:textColor="#ffffff"
+                            android:textSize="24dp" />
+
+                        <TextView
+                            android:layout_width="125sp"
+                            android:layout_height="76dp"
+                            android:text="Introduction on spinal stretch routines"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="68dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:src='@drawable/cardio'>
+
+                </ImageView>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

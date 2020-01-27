@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Cardio_info"
+    tools:showIn="@layout/activity_cardio_info"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <!--  Swimming Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/SwimmingField"
+        android:layout_width="300sp"
+        android:layout_height="146dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg4"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Swimming"
+                        android:textColor="#ffffff"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="125sp"
+                        android:layout_height="76dp"
+                        android:text="Introduction to Swimming"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="41dp"
+                android:layout_height="68dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src='@drawable/cardio'>
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--  Treadmill Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/TreadmillField"
+        android:layout_width="300sp"
+        android:layout_height="146dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Treadmill Running"
+                        android:textColor="#ffffff"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="125sp"
+                        android:layout_height="76dp"
+                        android:text="Introduction to treadmill exercise"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="41dp"
+                android:layout_height="68dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src='@drawable/cardio'>
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Elliptical Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/EllipticalField"
+        android:layout_width="300sp"
+        android:layout_height="146dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Elliptical"
+                        android:textColor="#ffffff"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="125sp"
+                        android:layout_height="76dp"
+                        android:text="Introduction to running on an Elliptical"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="41dp"
+                android:layout_height="68dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src='@drawable/cardio'>
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--  Jump Rope Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/JumpropeField"
+        android:layout_width="300sp"
+        android:layout_height="146dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jump Rope"
+                        android:textColor="#ffffff"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="125sp"
+                        android:layout_height="76dp"
+                        android:text="Introduction on how to Jump Rope"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="41dp"
+                android:layout_height="68dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src='@drawable/cardio'>
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--  Stair Machine Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/StairMachineField"
+        android:layout_width="300sp"
+        android:layout_height="146dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stair Machine"
+                        android:textColor="#ffffff"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="125sp"
+                        android:layout_height="76dp"
+                        android:text="Introduction on the Stair Machine"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="41dp"
+                android:layout_height="68dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src='@drawable/cardio'>
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--  Bike Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/StationaryBikeField"
+        android:layout_width="300sp"
+        android:layout_height="146dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stationary Bike"
+                        android:textColor="#ffffff"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="125sp"
+                        android:layout_height="76dp"
+                        android:text="Introduction to use a stationary bike"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="41dp"
+                android:layout_height="68dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src='@drawable/cardio'>
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
