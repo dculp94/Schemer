@@ -12,6 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+        android:text="This field contains information related to the Chest Press exercise. More information will be put in soon." />
+
+
 
 </androidx.core.widget.NestedScrollView>
