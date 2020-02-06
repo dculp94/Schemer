@@ -1,6 +1,8 @@
 package com.example.schemer;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -38,7 +40,14 @@ private WebView webView;
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://www.wikihow.com/Bench-Press");
         webView.setVerticalScrollBarEnabled(true);
-        webView.setHorizontalScrollBarEnabled(true);
+
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                view.loadUrl(url);
+                return true;
+            }
+        });
 
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
@@ -80,6 +89,11 @@ private WebView webView;
             }
 
         }
+    public void openChestVideo(View view) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/watch?v=SCVCLChPQFY"));
+        startActivity(browserIntent);
+    }
         public void onDateSet(DatePicker view, int year, int month, int dayOfMonth)
         {
             Calendar c = Calendar.getInstance();

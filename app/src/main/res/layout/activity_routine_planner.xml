@@ -9,11 +9,14 @@
 
     <TextView
         android:textAlignment="center"
-        android:textSize="@dimen/text_margin"
+        android:textSize="40dp"
         android:textColor="@color/white"
         android:id="@+id/selectedDay"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="50dp"
+        android:text="Your Routine"
+        android:textStyle="bold"
+        >
 
     </TextView>
 
@@ -22,20 +25,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
-    <TextView
-        android:id="@+id/selectionView"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimary"
-        android:textSize="30dp"
-        android:hint="Your week is looking empty!">
-
-    </TextView>
 
 
 
 </LinearLayout>
+
 
