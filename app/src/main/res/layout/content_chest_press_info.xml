@@ -6,13 +6,44 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".chest_press_info"
-    tools:showIn="@layout/activity_chest_press_info">
+    tools:showIn="@layout/activity_chest_press_info"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
-        android:text="This field contains information related to the Chest Press exercise. More information will be put in soon." />
+        android:textStyle="bold"
+        android:text="The bench press is the classic exercise that trains your triceps, deltoids, pectorals, and several other muscles at one time. The bench press is also the most competitive and popular exercise out there."
+        />
+    <WebView
+
+        android:id="@+id/webView_chestPress"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        >
+
+
+    </WebView>
+    <ImageView
+        android:layout_width="200d"
+        android:layout_height="100dp"
+
+        android:src="@drawable/Chest_Press_Vid_Logo">
+
+    </ImageView>
+
+</LinearLayout>
+
+
+
 
 
 

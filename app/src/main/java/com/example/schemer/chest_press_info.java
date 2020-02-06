@@ -13,6 +13,9 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.DialogFragment;
 
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
@@ -24,10 +27,21 @@ public class chest_press_info extends AppCompatActivity {
 
 Button dateSelection;
 TextView DateView;
+private WebView webView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chest_press_info);
+
+        // URL display on information
+        webView = (WebView) findViewById(R.id.webView_chestPress);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl("https://www.wikihow.com/Bench-Press");
+        webView.setVerticalScrollBarEnabled(true);
+        webView.setHorizontalScrollBarEnabled(true);
+
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
 
         dateSelection = findViewById(R.id.dateSelection);
         dateSelection.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +67,19 @@ TextView DateView;
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
+        @Override
+        public void onBackPressed()
+        {
+            if (webView.canGoBack())
+            {
+                webView.goBack();
+            }
+            else
+            {
+                super.onBackPressed();
+            }
+
+        }
         public void onDateSet(DatePicker view, int year, int month, int dayOfMonth)
         {
             Calendar c = Calendar.getInstance();
