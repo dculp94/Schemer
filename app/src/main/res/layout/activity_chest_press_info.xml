@@ -49,10 +49,31 @@
         android:windowSoftInputMode="adjustNothing"
         android:id="@+id/dateSelection"
         app:layout_anchorGravity="bottom"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="bottom"
         android:text="Add to Calendar">
+    </Button>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="openChestVideo"
+        android:src="@drawable/chest_press_vid_logo"
+        android:windowSoftInputMode="adjustNothing"></ImageView>
+
+    <Button
+
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|end"
+        android:text="Watch the video"
+        android:onClick="openChestVideo"
+        android:layout_marginRight="10dp">
+
     </Button>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

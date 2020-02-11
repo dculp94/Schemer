@@ -27,20 +27,17 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        >
-
+        android:layout_height="wrap_content">
 
     </WebView>
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_gravity="bottom|right"
-        android:src="@drawable/chest_press_vid_logo"
-        android:layout_marginRight="10dp"
-        android:onClick="openChestVideo">
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
 
-    </ImageView>
+    </TextView>
 
 </LinearLayout>
 
