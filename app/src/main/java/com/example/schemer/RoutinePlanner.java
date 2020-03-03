@@ -23,9 +23,11 @@ public class RoutinePlanner extends AppCompatActivity {
         CalendarView calendarView = findViewById(R.id.calendarView);
         final TextView selectedDay = findViewById(R.id.selectedDay);
 
-        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener()
+        {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {
+
                 selectedDay.setText("Selected Day: "+ i2);
             }
         });

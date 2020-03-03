@@ -45,15 +45,7 @@
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@drawable/plus_64" />
 
-    <Button
-        android:windowSoftInputMode="adjustNothing"
-        android:id="@+id/dateSelection"
-        app:layout_anchorGravity="bottom"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="bottom"
-        android:text="Add to Calendar">
-    </Button>
+    
 
     <ImageView
         android:layout_width="120dp"
@@ -63,7 +55,9 @@
         android:layout_marginBottom="20dp"
         android:onClick="openChestVideo"
         android:src="@drawable/chest_press_vid_logo"
-        android:windowSoftInputMode="adjustNothing"></ImageView>
+        android:windowSoftInputMode="adjustNothing">
+
+    </ImageView>
 
     <Button
 

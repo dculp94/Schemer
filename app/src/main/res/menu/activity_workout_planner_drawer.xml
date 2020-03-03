@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/nav_workout_programs"
+            android:icon="@drawable/squat"
+            android:title="Workout Programs" />
+
+        <item
+            android:id="@+id/nav_Strength_Programs"
+            android:icon="@drawable/barbell"
+            android:title="Strength Programs" />
+
+        <item
+            android:id="@+id/nav_Cardio_Programs"
+            android:icon="@drawable/squat"
+            android:title="Cardio Programs" />
+
+        <item
+            android:id="@+id/nav_mobility_programs"
+            android:icon="@drawable/yoga"
+            android:title="Mobility Programs" />
+
+
+        <item
+            android:id="@+id/nav_custom_programs"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Customize your own Program" />
+    </group>
+
+
+
+
+</menu>

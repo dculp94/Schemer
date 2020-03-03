@@ -210,12 +210,36 @@
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/Planner"
-        android:layout_width="227dp"
-        android:layout_height="103dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="15dp"
-        android:text="Go to Weekly Calendar" />
+    <RelativeLayout
+        android:layout_width="401dp"
+        android:layout_height="169dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/CalendarPlanner"
+            android:layout_width="188dp"
+            android:layout_height="108dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/bg2"
+            android:text="Weekly Calendar" />
+
+        <Button
+            android:id="@+id/WorkoutPlanner"
+            android:layout_width="188dp"
+            android:layout_height="108dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg6"
+            android:text="Workout Planner">
+
+        </Button>
+    </RelativeLayout>
+
 
 </LinearLayout>

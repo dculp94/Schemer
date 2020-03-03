@@ -14,7 +14,8 @@ public class User_Home_Page extends AppCompatActivity implements View.OnClickLis
     private CardView Strength;
     private CardView Cardio;
     private CardView Mobility;
-    private Button Planner;
+    private Button CalendarPlanner;
+    private Button WorkoutPlanner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -27,13 +28,15 @@ public class User_Home_Page extends AppCompatActivity implements View.OnClickLis
         Strength = findViewById(R.id.Strength);
         Cardio = findViewById(R.id.Cardio);
         Mobility = findViewById(R.id.Mobility);
-        Planner = findViewById(R.id.Planner);
+        CalendarPlanner = findViewById(R.id.CalendarPlanner);
+        WorkoutPlanner = findViewById(R.id.WorkoutPlanner);
 
         // Add click listener to each
         Strength.setOnClickListener(this);
         Cardio.setOnClickListener(this);
         Mobility.setOnClickListener(this);
-        Planner.setOnClickListener(this);
+        CalendarPlanner.setOnClickListener(this);
+        WorkoutPlanner.setOnClickListener(this);
     }
 
     @Override
@@ -48,8 +51,10 @@ public class User_Home_Page extends AppCompatActivity implements View.OnClickLis
                 i = new Intent(this, Cardio_info.class);startActivity(i); break;
             case R.id.Mobility:
                 i = new Intent(this, Mobility_info.class);startActivity(i); break;
-            case R.id.Planner:
+            case R.id.CalendarPlanner:
                 i = new Intent(this, RoutinePlanner.class);startActivity(i); break;
+            case R.id.WorkoutPlanner:
+                i = new Intent(this, com.example.schemer.WorkoutPlanner.class);startActivity(i);break;
 
             default:break;
         }

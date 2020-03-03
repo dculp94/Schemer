@@ -31,11 +31,11 @@ import android.widget.TextView;
 import java.text.DateFormat;
 import java.util.Calendar;
 
-public class chest_press_info extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
+public class chest_press_info extends AppCompatActivity {
 
 private static final String TAG = "chest_press_info";
 
-TextView dateText;
+
 Button dateSelection;
 private WebView webView;
 private DatePickerDialog.OnDateSetListener mDateSetListener;
@@ -51,13 +51,8 @@ private DatePickerDialog.OnDateSetListener mDateSetListener;
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://www.wikihow.com/Bench-Press");
 
-        dateSelection = findViewById(R.id.dateSelection);
-        dateSelection.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-               showDatePickerDialog();
-            }
-        });
+
+
 
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -67,32 +62,11 @@ private DatePickerDialog.OnDateSetListener mDateSetListener;
             }
         });
 
-        dateText = findViewById(R.id.dateText);
-
 
 
 
     }
 
-
-    private void showDatePickerDialog()
-    {
-        DatePickerDialog datePickerDialog = new DatePickerDialog(
-                this,
-                this,
-                Calendar.getInstance().get(Calendar.YEAR),
-                Calendar.getInstance().get(Calendar.MONTH),
-                Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
-        );
-        datePickerDialog.show();
-
-    }
-
-    @Override
-    public void onDateSet(DatePicker datePicker, int year, int month, int dayOfMonth) {
-        String date = "month/day/year: " + month + "/" + dayOfMonth + "/" + year;
-        dateText.setText(date);
-    }
 
         @Override
         public void onBackPressed()

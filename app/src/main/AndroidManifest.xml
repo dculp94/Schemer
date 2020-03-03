@@ -12,27 +12,41 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning"
-        >
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".testPlanner.testPlanner"
+            android:label="@string/title_activity_test_planner"
+            android:parentActivityName=".User_Home_Page">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.schemer.User_Home_Page" />
+        </activity>
+        <activity
+            android:name=".WorkoutPlanner"
+            android:label="@string/title_activity_workout_planner"
+            android:parentActivityName=".User_Home_Page"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.schemer.User_Home_Page" />
+        </activity>
         <activity
             android:name=".Spinal_Stretch_Info"
             android:label="@string/title_activity_spinal__stretch__info"
             android:parentActivityName=".Mobility_info"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustNothing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.schemer.Mobility_info" />
-        </activity>
-
-        <!-- Informational -->
+        </activity> <!-- Informational -->
         <activity
             android:name=".Ankle_Info"
             android:label="@string/title_activity_ankle__info"
             android:parentActivityName=".Mobility_info"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustNothing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -42,8 +56,8 @@
             android:name=".Static_Hold_Info"
             android:label="@string/title_activity_static__hold__info"
             android:parentActivityName=".Mobility_info"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustNothing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -53,8 +67,8 @@
             android:name=".Yoga_Info"
             android:label="@string/title_activity_yoga"
             android:parentActivityName=".Mobility_info"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustNothing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -64,8 +78,8 @@
             android:name=".Leg_Press_Info"
             android:label="@string/title_activity_leg__press__info"
             android:parentActivityName=".LowerBodyExercises"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustNothing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -75,8 +89,8 @@
             android:name=".Hack_Squat_Info"
             android:label="@string/title_activity_hack__squat__info"
             android:parentActivityName=".LowerBodyExercises"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustNothing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -86,8 +100,8 @@
             android:name=".Deadlift_Info"
             android:label="@string/title_activity_deadlift__info"
             android:parentActivityName=".LowerBodyExercises"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustNothing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -97,8 +111,8 @@
             android:name=".Squat_Info"
             android:label="@string/title_activity_squat__info"
             android:parentActivityName=".LowerBodyExercises"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustNothing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -108,8 +122,8 @@
             android:name=".Horizontal_Pull_Info"
             android:label="@string/title_activity_horizontal__pull__info"
             android:parentActivityName=".UpperBodyExercises"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustNothing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -119,8 +133,8 @@
             android:name=".Tricep_Info"
             android:label="@string/title_activity_tricep__info"
             android:parentActivityName=".UpperBodyExercises"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustNothing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -130,8 +144,8 @@
             android:name=".Bicep_Info"
             android:label="@string/title_activity_bicep__info"
             android:parentActivityName=".UpperBodyExercises"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustNothing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -141,8 +155,8 @@
             android:name=".Shoulder_Press_info"
             android:label="@string/title_activity_shoulder__press_info"
             android:parentActivityName=".UpperBodyExercises"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustNothing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -152,22 +166,19 @@
             android:name=".chest_press_info"
             android:label="@string/title_activity_chest_press_info"
             android:parentActivityName=".UpperBodyExercises"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustNothing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.schemer.UpperBodyExercises" />
-
         </activity>
-
-
         <activity
             android:name=".LowerBodyExercises"
             android:label="@string/title_activity_lower_body_exercises"
             android:parentActivityName=".Strength_info"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.schemer.Strength_info" />
@@ -201,7 +212,7 @@
                 android:value="com.example.schemer.Cardio_info" />
         </activity>
         <activity android:name=".Strength_info" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Schemer</string>
-    <string name="Strength">Selecting this card allows the user to pursue further interests into Strength weekly routines.</string>
-    <string name="Cardio">Selecting this card allows the user to pursue further interests into Cardiovascular weekly routines.</string>
-    <string name="Mobility">Selecting this card allows the user to pursue further interests into Mobility weekly routines</string>
+    <string name="Strength">Selecting this card provides information on strength exercises</string>
+    <string name="Cardio">Selecting this card provides information on cardiovascular exercised</string>
+    <string name="Mobility">Selecting this card provides information on mobility exercises</string>
     <string name="title_activity_calendar">Calendar</string>
     <string name="title_activity_upper_body_strength">UpperBody_strength</string>
     <string name="large_text">
@@ -123,5 +123,22 @@
     <string name="title_activity_static__hold__info">Static Hold Routine</string>
     <string name="title_activity_ankle__info">Ankle Stretch Routine</string>
     <string name="title_activity_spinal__stretch__info">Spinal Stretch Routine</string>
+    <string name="title_activity_workout_planner">WorkoutPlanner</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_test_planner">testPlanner</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 </resources>

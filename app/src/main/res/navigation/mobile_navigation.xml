@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_workout_programs">
+
+    <fragment
+        android:id="@+id/nav_workout_programs"
+        android:name="com.example.schemer.ui.WorkoutPrograms.WorkoutProgramsFragment"
+        android:label="Workout Programs"
+        tools:layout="@layout/fragment_workout_programs" />
+
+    <fragment
+        android:id="@+id/nav_custom_programs"
+        android:name="com.example.schemer.ui.CustomizedPrograms.Customize_Programs_Fragment"
+        android:label="Custom Workout Programs"
+        tools:layout="@layout/fragment_custom_program" />
+    <fragment
+        android:id="@+id/nav_Mobility"
+        android:name="com.example.schemer.ui.Mobility_Programs.Mobility_Fragment"
+        android:label="Mobility"
+        tools:layout="@layout/fragment_mobility_programs"
+        />
+    <fragment
+        android:id="@+id/nav_Strength_Programs"
+        android:name="com.example.schemer.ui.CustomizedPrograms.Customize_Programs_Fragment"
+        android:label="Custom Workout Programs"
+        tools:layout="@layout/fragment_custom_program" />
+    <fragment
+        android:id="@+id/nav_Cardio_Programs"
+        android:name="com.example.schemer.ui.CustomizedPrograms.Customize_Programs_Fragment"
+        android:label="Custom Workout Programs"
+        tools:layout="@layout/fragment_custom_program" />
+
+
+     />
+</navigation>
