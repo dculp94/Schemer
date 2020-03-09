@@ -17,5 +17,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="this is sample text"/>
+        android:text="This field is for the implementation of your cardio exercises and adding them to the calendar!"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

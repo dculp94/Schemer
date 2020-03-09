@@ -3,13 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_workout_programs">
+    app:startDestination="@+id/nav_Strength_Programs">
 
-    <fragment
-        android:id="@+id/nav_workout_programs"
-        android:name="com.example.schemer.ui.WorkoutPrograms.WorkoutProgramsFragment"
-        android:label="Workout Programs"
-        tools:layout="@layout/fragment_workout_programs" />
+
 
     <fragment
         android:id="@+id/nav_custom_programs"
@@ -17,21 +13,21 @@
         android:label="Custom Workout Programs"
         tools:layout="@layout/fragment_custom_program" />
     <fragment
-        android:id="@+id/nav_Mobility"
+        android:id="@+id/nav_mobility_programs"
         android:name="com.example.schemer.ui.Mobility_Programs.Mobility_Fragment"
-        android:label="Mobility"
+        android:label="Mobility Programs"
         tools:layout="@layout/fragment_mobility_programs"
         />
     <fragment
         android:id="@+id/nav_Strength_Programs"
-        android:name="com.example.schemer.ui.CustomizedPrograms.Customize_Programs_Fragment"
-        android:label="Custom Workout Programs"
-        tools:layout="@layout/fragment_custom_program" />
+        android:name="com.example.schemer.ui.Strength_Programs.Strength_Fragment"
+        android:label="Strength Programs"
+        tools:layout="@layout/fragment_strength_programs" />
     <fragment
         android:id="@+id/nav_Cardio_Programs"
-        android:name="com.example.schemer.ui.CustomizedPrograms.Customize_Programs_Fragment"
-        android:label="Custom Workout Programs"
-        tools:layout="@layout/fragment_custom_program" />
+        android:name="com.example.schemer.ui.Cardio_Programs.Cardio_Fragment"
+        android:label="Cardio Programs"
+        tools:layout="@layout/fragment_cardio_programs" />
 
 
      />

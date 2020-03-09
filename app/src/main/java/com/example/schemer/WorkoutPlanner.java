@@ -38,7 +38,7 @@ public class WorkoutPlanner extends AppCompatActivity {
 
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_workout_programs,R.id.nav_Mobility,R.id.nav_Cardio_Programs,R.id.nav_Strength_Programs, R.id.nav_custom_programs)
+                R.id.nav_mobility_programs,R.id.nav_Cardio_Programs,R.id.nav_Strength_Programs, R.id.nav_custom_programs)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

@@ -13,13 +13,19 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.schemer.R;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Customize_Programs_Fragment extends Fragment {
 
     private CustomizedProgramsViewModel customizedProgramsViewModel;
 
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+
+
         customizedProgramsViewModel =
                 ViewModelProviders.of(this).get(CustomizedProgramsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_custom_program, container, false);
